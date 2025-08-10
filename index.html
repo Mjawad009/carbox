@@ -1,25 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>CarBox Demo</title>
-  <style>
-    body, html {
-      margin: 0;
-      padding: 0;
-      height: 100vh;
-      overflow: hidden;
-    }
-    iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>PDF in Container</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .pdf-container {
+            width: 1200px; /* adjust size */
+            height: 800px; /* adjust size */
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+            border: none;
+        }
+    </style>
 </head>
 <body>
-  <iframe src="CarBox.pdf">
-    Your browser does not support iframes — please download the PDF: <a href="CarBox.pdf">View PDF</a>
-  </iframe>
+    <iframe class="pdf-container" src="CarBox.pdf"></iframe>
 </body>
 </html>
